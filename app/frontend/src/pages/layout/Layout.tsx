@@ -1,6 +1,6 @@
 import { Outlet, NavLink, Link } from "react-router-dom";
 
-import github from "../../assets/github.svg";
+import harmonia_logo from "../../assets/harmonia-logo.svg";
 
 import styles from "./Layout.module.css";
 
@@ -29,14 +29,14 @@ const Layout = () => {
                                 </NavLink>
                             </li>
                             <li className={styles.headerNavLeftMargin}>
-                                <a href="https://aka.ms/entgptsearch" target={"_blank"} title="Github repository link">
+                                <a href="https://harmoniaholdingsgroupllc.sharepoint.com/sites/HarmoniaTeamAccess/SiteAssets/Forms/AllItems.aspx?id=%2Fsites%2FHarmoniaTeamAccess%2FSiteAssets%2FSitePages%2FEmployee%2DHandbook%2Dand%2DBenefits%2DGuide%2F2024%2DHarmonia%2DEmployee%2DHandbook%2Epdf&parent=%2Fsites%2FHarmoniaTeamAccess%2FSiteAssets%2FSitePages%2FEmployee%2DHandbook%2Dand%2DBenefits%2DGuide" target={"_blank"} title="Link to Harmonia Employee Handbook">
                                     <img
-                                        src={github}
-                                        alt="Github logo"
-                                        aria-label="Link to github repository"
+                                        src={harmonia_logo}
+                                        alt="Harmonia logo"
+                                        aria-label="Link to Harmonia"
                                         width="20px"
                                         height="20px"
-                                        className={styles.githubLogo}
+                                        className={styles.harmoniaLogo}
                                     />
                                 </a>
                             </li>
