@@ -178,7 +178,7 @@ export function Component(): JSX.Element {
         <div className={styles.askContainer}>
             <div className={styles.askTopSection}>
                 <SettingsButton className={styles.settingsButton} onClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)} />
-                <h1 className={styles.askTitle}>Ask your data</h1>
+                <h1 className={styles.askTitle}>Start asking</h1>
                 <div className={styles.askQuestionInput}>
                     <QuestionInput
                         placeholder="Type a new question (e.g. what is the contact for IT support?)"
