@@ -29,7 +29,11 @@ const Layout = () => {
                                 </NavLink>
                             </li>
                             <li className={styles.headerNavLeftMargin}>
-                                <a href="https://harmoniaholdingsgroupllc.sharepoint.com/sites/HarmoniaTeamAccess/SiteAssets/Forms/AllItems.aspx?id=%2Fsites%2FHarmoniaTeamAccess%2FSiteAssets%2FSitePages%2FEmployee%2DHandbook%2Dand%2DBenefits%2DGuide%2F2024%2DHarmonia%2DEmployee%2DHandbook%2Epdf&parent=%2Fsites%2FHarmoniaTeamAccess%2FSiteAssets%2FSitePages%2FEmployee%2DHandbook%2Dand%2DBenefits%2DGuide" target={"_blank"} title="Link to Harmonia Employee Handbook">
+                                <a
+                                    href="https://harmoniaholdingsgroupllc.sharepoint.com/sites/HarmoniaTeamAccess/SiteAssets/Forms/AllItems.aspx?id=%2Fsites%2FHarmoniaTeamAccess%2FSiteAssets%2FSitePages%2FEmployee%2DHandbook%2Dand%2DBenefits%2DGuide%2F2024%2DHarmonia%2DEmployee%2DHandbook%2Epdf&parent=%2Fsites%2FHarmoniaTeamAccess%2FSiteAssets%2FSitePages%2FEmployee%2DHandbook%2Dand%2DBenefits%2DGuide"
+                                    target={"_blank"}
+                                    title="Link to Harmonia Employee Handbook"
+                                >
                                     <img
                                         src={harmonia_logo}
                                         alt="Harmonia logo"
@@ -42,7 +46,7 @@ const Layout = () => {
                             </li>
                         </ul>
                     </nav>
-                    <h4 className={styles.headerRightText}>Azure OpenAI</h4>
+                    <h4 className={styles.headerRightText}>Azure OpenAI + Azure AI Search</h4>
                     {useLogin && <LoginButton />}
                 </div>
             </header>
