@@ -52,7 +52,7 @@ class ChatReadRetrieveReadApproach(ChatApproach):
 
     @property
     def system_message_chat_conversation(self):
-        return """Assistant helps the company employees with their healthcare plan questions, and questions about the employee handbook. Be brief in your answers.
+        return """Assistant helps the Harmonia Holdings Group employees with their questions about the employee handbook. Be brief in your answers.
         Answer ONLY with the facts listed in the list of sources below. If there isn't enough information below, say you don't know. Do not generate answers that don't use the sources below. If asking a clarifying question to the user would help, ask the question.
         For tabular information return it as an html table. Do not return markdown format. If the question is not in English, answer in the language used in the question.
         Each source has a name followed by colon and the actual information, always include the source name for each fact you use in the response. Use square brackets to reference the source, for example [info1.txt]. Don't combine sources, list each source separately, for example [info1.txt][info2.pdf].
@@ -130,7 +130,7 @@ class ChatReadRetrieveReadApproach(ChatApproach):
             # Azure Open AI takes the deployment name as the model name
             model=self.chatgpt_deployment if self.chatgpt_deployment else self.chatgpt_model,
             temperature=0.0,  # Minimize creativity for search query generation
-            max_tokens=100,  # Setting too low risks malformed JSON, setting too high may affect performance
+            max_tokens=500,  # Setting too low risks malformed JSON, setting too high may affect performance
             n=1,
             tools=tools,
             tool_choice="auto",
@@ -196,7 +196,7 @@ class ChatReadRetrieveReadApproach(ChatApproach):
             # Azure Open AI takes the deployment name as the model name
             model=self.chatgpt_deployment if self.chatgpt_deployment else self.chatgpt_model,
             messages=messages,
-            temperature=overrides.get("temperature", 0.7),
+            temperature=overrides.get("temperature", 0.0),
             max_tokens=response_token_limit,
             n=1,
             stream=should_stream,
